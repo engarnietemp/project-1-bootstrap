@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - The Artist's Roast</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Couleurs marron du site original */
+        :root {
+            --coffee-brown: #8B4513;
+            --light-brown: #D2691E;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero/coffee-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            color: white;
+        }
+        .hero-info {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+        
+        /* Navigation avec les même couleurs qu'avant */
+        .navbar-brand, .nav-link {
+            color: var(--coffee-brown) !important;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--light-brown) !important;
+        }
+        .dropdown-item {
+            color: var(--coffee-brown);
+        }
+        .dropdown-item:hover {
+            background-color: var(--coffee-brown);
+            color: white;
+        }
+        
+        /* Bouton marron */
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            border-color: var(--coffee-brown);
+            color: white;
+        }
+        .btn-coffee:hover {
+            background-color: var(--light-brown);
+            border-color: var(--light-brown);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo" height="60" class="me-3">
+                <span class="fw-bold">The Artists' Roast</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dine-in.html">Dine In</a></li>
+                            <li><a class="dropdown-item" href="takeaway-delivery.html">Takeaway & Delivery</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3"style="color: #8B4513;">Our Story</h2>
+                <p class="lead">Discover the passion behind The Artists' Roast</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                        <!-- From Dream to Reality -->
+                        <div class="mb-5">
+                            <h3 class="h2 mb-4 border-bottom pb-2" style="color: #8B4513; border-color: #8B4513 !important;">From Dream to Reality</h3>
+                            <div class="bg-light p-4 rounded">
+                                <p>
+                                    The Artists' Roast was born in 2019 from a simple dream: to create a space where exceptional coffee meets creative expression. Founded by Sarah Johnson, a former graphic designer turned passionate barista, our coffee shop emerged from the vibrant arts district of Brooklyn with a mission to serve both the local community and visiting artists.
+                                </p>
+                                <p>
+                                    What started as a small 20-seat café has grown into a beloved neighborhood hub, but we've never lost sight of our core values. Every morning, we hand-select our beans from fair-trade farms, supporting sustainable practices and the communities that grow our coffee. Our partnership with local bakeries ensures fresh pastries daily, while our walls showcase rotating exhibitions from emerging artists.
+                                </p>
+
+                            </div>
+                        </div>
+                        
+                        <!-- Our Mission -->
+                        <div class="mb-5">
+                            <h3 class="h2 mb-4 border-bottom pb-2" style="color: #8B4513; border-color: #8B4513 !important;">Our Mission</h3>
+                            <div class="bg-light p-4 rounded">
+                                <p class="mb-3">
+                                    We believe that great coffee has the power to fuel creativity and build community. Our mission extends beyond serving exceptional beverages – we're committed to creating an inclusive environment where artists, entrepreneurs, students, and neighbors can gather, collaborate, and find inspiration.
+                                </p>
+                                <p class="mb-0">
+                                    Every cup we serve supports fair-trade practices, and every event we host strengthens the creative fabric of our neighborhood. We're not just a coffee shop; we're a catalyst for artistic expression and meaningful connections.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Community First -->
+                        <div class="mb-5">
+                            <h3 class="h2 mb-4 border-bottom pb-2" style="color: #8B4513; border-color: #8B4513 !important;">Community First</h3>
+                            <div class="bg-light p-4 rounded">
+                                <p>
+                                    The heart of The Artists' Roast beats with community spirit. Our weekly open mic nights have launched local musicians' careers, while our monthly art exhibitions provide emerging artists with their first gallery experience. We offer discounted workspace memberships to freelance creatives and host quarterly networking events that bring together Brooklyn's diverse artistic community.
+                                </p>
+                                <p>
+                                    From sourcing locally-made ceramics for our mugs to partnering with neighborhood organizations for charity drives, we're deeply rooted in Brooklyn's creative ecosystem. When you visit us, you're not just a customer – you're part of our extended family of dreamers, makers, and coffee enthusiasts.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 The Artists' Roast. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - The Artist's Roast</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Couleurs marron du site original */
+        :root {
+            --coffee-brown: #8B4513;
+            --light-brown: #D2691E;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero/coffee-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            color: white;
+        }
+        .hero-info {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+        
+        /* Navigation avec les même couleurs qu'avant */
+        .navbar-brand, .nav-link {
+            color: var(--coffee-brown) !important;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--light-brown) !important;
+        }
+        .dropdown-item {
+            color: var(--coffee-brown);
+        }
+        .dropdown-item:hover {
+            background-color: var(--coffee-brown);
+            color: white;
+        }
+        
+        /* Bouton marron */
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            border-color: var(--coffee-brown);
+            color: white;
+        }
+        .btn-coffee:hover {
+            background-color: var(--light-brown);
+            border-color: var(--light-brown);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo" height="60" class="me-3">
+                <span class="fw-bold">The Artists' Roast</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="dine-in.html">Dine In</a></li>
+                            <li><a class="dropdown-item" href="takeaway-delivery.html">Takeaway & Delivery</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- HEADER -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3" style="color: #8B4513;">Dine In Experience</h2>
+                <p class="lead text-muted">More than coffee - a creative sanctuary for artists and dreamers</p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4 mb-5">
+                    
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="../assets/images/services/workspace.jpg" class="card-img-top" alt="Coworking Space" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #8B4513;">Creative Workspace</h5>
+                                <p class="card-text">Free WiFi, power outlets at every table, and a quiet atmosphere perfect for remote work, studying, or creative projects. Our communal tables encourage collaboration and networking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="../assets/images/services/seating-areas.jpg" class="card-img-top" alt="Comfortable Seating" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #8B4513;">Diverse Seating Options</h5>
+                                <p class="card-text">From cozy armchairs by the window to communal high tables and quiet corners, find your perfect spot. Our interior design reflects local artists' work, creating an inspiring environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="../assets/images/services/events.jpg" class="card-img-top" alt="Live Events" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #8B4513;">Live Events & Exhibitions</h5>
+                                <p class="card-text">Weekly open mic nights, monthly art exhibitions, and quarterly poetry readings. Check our events calendar and become part of our thriving creative community.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <img src="../assets/images/services/atmosphere.jpg" class="card-img-top" alt="Cozy Atmosphere" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #8B4513;">All-Day Atmosphere</h5>
+                                <p class="card-text">Morning energy with fresh pastries, midday focus for productivity, and evening relaxation with craft beverages. Our lighting and music adapt throughout the day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OPENING HOURS -->
+                <div class="bg-light p-4 rounded">
+                    <h3 class="text-center mb-4" style="color: #8B4513;">Opening Hours</h3>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="text-center p-3 bg-white rounded">
+                                <h5 class="fw-bold mb-2" style="color: #8B4513;">Monday - Friday</h5>
+                                <p class="mb-0 text-muted">6:30 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center p-3 bg-white rounded">
+                                <h5 class="fw-bold mb-2" style="color: #8B4513;">Saturday</h5>
+                                <p class="mb-0 text-muted">7:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center p-3 bg-white rounded">
+                                <h5 class="fw-bold mb-2" style="color: #8B4513;">Sunday</h5>
+                                <p class="mb-0 text-muted">8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    }
+    </style>
+    
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 The Artists' Roast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

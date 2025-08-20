@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - The Artist's Roast</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Couleurs marron du site original */
+        :root {
+            --coffee-brown: #8B4513;
+            --light-brown: #D2691E;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero/coffee-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            color: white;
+        }
+        .hero-info {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+        }
+        
+        /* Navigation avec les même couleurs qu'avant */
+        .navbar-brand, .nav-link {
+            color: var(--coffee-brown) !important;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--light-brown) !important;
+        }
+        .dropdown-item {
+            color: var(--coffee-brown);
+        }
+        .dropdown-item:hover {
+            background-color: var(--coffee-brown);
+            color: white;
+        }
+        
+        /* Bouton marron */
+        .btn-coffee {
+            background-color: var(--coffee-brown);
+            border-color: var(--coffee-brown);
+            color: white;
+        }
+        .btn-coffee:hover {
+            background-color: var(--light-brown);
+            border-color: var(--light-brown);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo" height="60" class="me-3">
+                <span class="fw-bold">The Artists' Roast</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu active">
+                            <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item active" href="team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dine-in.html">Dine In</a></li>
+                            <li><a class="dropdown-item" href="takeaway-delivery.html">Takeaway & Delivery</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Page Header -->
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-3" style="color: #8B4513;">Meet Our Team</h2>
+                <p class="lead text-muted">The passionate people behind your perfect cup</p>
+            </div>
+        </section>
+
+        <!-- Team Grid -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <!-- Sarah Johnson - Founder -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="../assets/images/team/founder.png" class="card-img-top" alt="Sarah Johnson - Founder" style="height: 400px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold" style="color: #8B4513;">Sarah Johnson</h5>
+                                <h6 class="card-subtitle mb-3" style="color: #D2691E;">Founder & Head Roaster</h6>
+                                <p class="card-text small">A former graphic designer who discovered her true calling in coffee. Sarah trained with master roasters in Seattle before opening The Artists' Roast. Her eye for detail, honed through years of design work, now ensures every batch of beans meets our exacting standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Marcus Chen - Head Barista -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="../assets/images/team/head-barista.png" class="card-img-top" alt="Marcus Chen - Head Barista" style="height: 400px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold" style="color: #8B4513;">Marcus Chen</h5>
+                                <h6 class="card-subtitle mb-3" style="color: #D2691E;">Head Barista</h6>
+                                <p class="card-text small">With championships in latte art competitions across the East Coast, Marcus brings both technical precision and artistic flair to every cup. His innovative approach to espresso extraction has earned recognition from Coffee Review Magazine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emma Rodriguez - Pastry Chef -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="../assets/images/team/pastry-chef.png" class="card-img-top" alt="Emma Rodriguez - Pastry Chef" style="height: 400px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold" style="color: #8B4513;">Emma Rodriguez</h5>
+                                <h6 class="card-subtitle mb-3" style="color: #D2691E;">Pastry Chef</h6>
+                                <p class="card-text small">Trained at the Culinary Institute of America, Emma creates our daily selection of pastries and light meals. Her seasonal menu reflects her commitment to local ingredients and her Latin American heritage, bringing unique flavors to traditional café fare.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Alex Thompson - Community Manager -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="../assets/images/team/community-manager.png" class="card-img-top" alt="Alex Thompson - Community Manager" style="height: 400px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold" style="color: #8B4513;">Alex Thompson</h5>
+                                <h6 class="card-subtitle mb-3" style="color: #D2691E;">Community Manager</h6>
+                                <p class="card-text small">A local musician and event organizer, Alex curates our weekly programming and manages artist exhibitions. Their deep connections in Brooklyn's creative community have made The Artists' Roast a genuine cultural hub for emerging talent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    }
+    </style>
+    
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 The Artists' Roast. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
